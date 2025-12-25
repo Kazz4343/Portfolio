@@ -1,10 +1,11 @@
 import "./App.css";
-import Navbar from "./components/Navbar.jsx";
+
 import Hero from "./components/Hero.jsx";
 import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
 import {useEffect, useState} from "react";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
+import { Navbar } from "./components/Navbar.jsx";
 
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
 
     return (
         <div className={`app ${isLoaded ? "loaded" : ""}`}>
-            <Navbar />
+            <Navbar />         
 
             <Hero />
             <Projects />
