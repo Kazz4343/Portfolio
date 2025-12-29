@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion'
+import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -64,14 +66,64 @@ const Hero = () => {
                   {''}
                   Contract Me
                 </motion.a>
+              </motion.div>
                 <motion.div className='social-links'
                 variants={staggerContainer}
                 >
-                <motion.a></motion.a>
+                  <motion.a href='https://github.com/Kazz4343' target='_blank'>
+                    <i className='fab fa-github'></i>
+                  </motion.a>
+                  <motion.a href='https://www.linkedin.com/in/kritsada-rodrit-1b647923a/' target='_blank'>
+                    <i className='fab fa-linkedin'></i>
+                  </motion.a>
                 </motion.div>
               </motion.div>
-            
-            </motion.div>
+
+              <motion.div className='hero-image-container'
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}  
+              >
+                <div className='code-display'>
+                  <SyntaxHighlighter 
+                    language='javascript'
+                    customStyle={{ 
+                      margin: 0, 
+                      padding: '2rem', 
+                      height: '100%', 
+                      borderRadius: '20px',
+                      background: 'rgba(30,41,59,0.8)',
+                      backdropFilter: 'blur(10px)',
+                      marginBottom: '20px',
+                    }}
+                    style={vscDarkPlus}
+                  >
+                    {`const aboutMe: DeveloperProfile = {
+  name: 'Kritsada',
+  role: 'Frontend web developer with some backend knowledge',
+  stack: {
+    language: ["JavaScript", 'TypeScript'],
+    frameworks: ["React", "Next.js", "TailwindCSS", 'Vue'],
+  },
+  traits: [
+    'Detail-Oriented',
+    'User-centric Thinking',
+    'Adaptability',
+    'Problem-Solver'
+  ],
+  missionStatement:
+    "Self-taught, detail-oriented, and driven by code.",
+    "I build modern web experiences with a focus on clean architecture",
+    "and seamless user interaction."
+}; `}
+                  </SyntaxHighlighter>
+                </div>
+
+                <motion.div>
+                
+                </motion.div>
+              
+              </motion.div>
           </div>
         </motion.section>
     )
