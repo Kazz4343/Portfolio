@@ -119,8 +119,17 @@ const Hero = () => {
                   </SyntaxHighlighter>
                 </div>
 
-                <motion.div>
-                
+                <motion.div className='floating-card' 
+                  animate={{ y: [0, -10, 0]}}
+                  transition={{ duration:4, repeat: Infinity, ease: 'easeInOut'}}
+                >
+                <div className='card-content'>
+                  <span className='card-icon'>💻</span>
+                  <span className='card-text'>
+                    {''}
+                    Currently working on something AWESOME
+                  </span>
+                </div>
                 </motion.div>
               
               </motion.div>
