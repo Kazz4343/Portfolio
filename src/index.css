@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #E0754D;
+  --color-accent: #DCCEB4;
+  --color-background: #38464D;
+  --animate-float-slow: float 2s ease-in-out infinite;
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+}
+
+@layer utilities {
+  .hover-glow:hover {
+    color: #ff9e7d; 
+    text-shadow: 
+      0 0 8px rgba(224, 122, 95, 0.8),
+      0 0 20px rgba(224, 122, 95, 0.4),
+      0 0 40px rgba(224, 122, 95, 0.2);
+  }
+}
+
