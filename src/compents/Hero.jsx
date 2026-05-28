@@ -1,75 +1,63 @@
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import TerminalClone from "./TerminalClone"
+
 
 export default function Hero() {
   return (
-    <div className="grid grid-cols-2 p-15 gap-5 mt-5">
-      {/* Left side content */}
-      <div className="">
-        <div className="">
-          <p className="text-7xl font-bold text-background">Hello, I am</p>
-          <h1 className="text-7xl font-bold text-background">Kritsada!</h1>
-        </div>
-        <div className="mt-3 flex">
-          <p className="grow text-justify max-w-md leading-relaxed hyphens-auto">
-            A self-taught frontend developer with a background in International 
-            Business and Trust & Safety operations. I combine analytical problem-solving 
-            with React and Tailwind CSS to craft highly polished, accessible, and high-performance user interfaces.
-          </p>
-        </div>
+    <section id="Hero" className="w-full bg-[#E2D4C5] py-12 px-4 md:px-16 min-h-screen flex items-center justify-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl w-full">
 
-        <div className="flex gap-3 mt-5">
-          <a href="https://github.com/Kazz4343" 
-            target="_blank"
-            className="flex items-center text-2xl text-[#6C5CE7]"
-          >
-            <FaGithub />
-          </a>
-          <a href="https://github.com/Kazz4343" 
-            target="_blank"
-            className="flex items-center text-2xl text-[#6D95FF]"
-          >
-            <FaLinkedin />
-          </a>
+        {/* Left side content */}
+        <div className="flex justify-center lg:justify-start">
+          <div className="w-85 bg-white rounded-lg p-4 flex flex-col gap-4 shadow-sm">
+            <div className="grow flex justify-center mt-5">
+              <img alt="profile" src="/public/Profile.png" className="h-75 w-75 rounded-xl"/>
+            </div>
+            <div className="flex flex-col gap-2 mt-2 mx-4 mb-2">
+              <h2 className="grow text-xl font-semibold">Tech Stack</h2>
+              <ul className="flex flex-wrap gap-2 text-xs font-medium">
+                <li className="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md">React</li>
+                <li className="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md">Next.js</li>
+                <li className="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md">Tailwind CSS</li>
+                <li className="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md">Firebase</li>
+                <li className="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md">JavaScript / TypeScript</li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-      {/* Right side content */}
-      <div>
-        <div className="bg-[#2D2A3E] text-[#A29BFE] 
-          font-mono p-6 rounded-2xl shadow-2xl 
-          border border-white/5 relative 
-          max-w-xl w-full"
-        >
-  {/* Code imitation */}
-          <div className="flex gap-2 mb-4">
-            <div className="w-3 h-3 rounded-full bg-red-500"></div>
-            <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-            <div className="w-3 h-3 rounded-full bg-green-500"></div>
+        {/* Right side content */}
+        <div className="flex flex-col gap-6 max-w-xl w-full">
+          <div className="">
+            <h1 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-800">Hello, I am Kritsada!</h1>
+            
+          </div>
+          <div className="mt-3 flex">
+            <p className="text-left leading-relaxed text-slate-600">
+              A self-taught frontend developer with a background in International 
+              Business and Trust & Safety operations. I combine analytical problem-solving 
+              with React and Tailwind CSS to craft highly polished, accessible, and high-performance user interfaces.
+            </p>
           </div>
 
-          <pre className="text-sm overflow-x-auto whitespace-pre-wrap leading-relaxed">
-            <code>
-              <span className="text-[#6C5CE7]">const</span> aboutMe: <span className="text-[#00B894]">DeveloperProfile</span> = &#123;{"\n"}
-              {"  "}name: <span className="text-[#E07A5F]">'Kritsada'</span>,{"\n"}
-              {"  "}role: <span className="text-[#E07A5F]">'Frontend web developer with some backend knowledge'</span>,{"\n"}
-              {"  "}stack: &#123;{"\n"}
-              {"    "}language: [<span className="text-[#E07A5F]">'JavaScript'</span>, <span className="text-[#E07A5F]">'TypeScript'</span>],{"\n"}
-              {"    "}frameworks: [<span className="text-[#E07A5F]">'React'</span>, <span className="text-[#E07A5F]">'Next.js'</span>, <span className="text-[#E07A5F]">'TailwindCSS'</span>,{"\n"}
-              {"  "}&#125;,{"\n"}
-              {"  "}coreStrengths: [ <span className="text-[#E07A5F]">'Detail-Oriented'</span>, <span className="text-[#E07A5F]">'User-centric Thinking'</span>, <span className="text-[#E07A5F]">'Responsive & Accessible Web Design',</span>, <span className="text-[#E07A5F]">'Adaptability'</span>, <span className="text-[#E07A5F]">'Problem-Solver'</span> ],{"\n"}
-              &#125;;
-            </code>
-          </pre>
-
+          <TerminalClone />
           
-          <div className="absolute bottom-75 -right-6 bg-white/15 
-            backdrop-blur-md rounded-xl px-4 py-2 text-md flex 
-            items-center gap-2 text-white shadow-lg animate-float-slow"
-          >
-            <span>☕ </span>Transforming coffee into a brand new idea
+          <div className="flex gap-3 mt-5">
+            <a href="https://github.com/Kazz4343" 
+              target="_blank"
+              className="flex items-center text-2xl text-[#6C5CE7]"
+            >
+              <FaGithub />
+            </a>
+            <a href="https://www.linkedin.com/in/kritsada-rodrit-1b647923a/" 
+              target="_blank"
+              className="flex items-center text-2xl text-[#6D95FF]"
+            >
+              <FaLinkedin />
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
