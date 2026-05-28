@@ -24,7 +24,7 @@ export default function TerminalClone() {
               {"    "}language: [<span className="text-[#E07A5F]">'JavaScript'</span>, <span className="text-[#E07A5F]">'TypeScript'</span>],{"\n"}
               {"    "}frameworks: [<span className="text-[#E07A5F]">'React'</span>, <span className="text-[#E07A5F]">'Next.js'</span>, <span className="text-[#E07A5F]">'TailwindCSS'</span>,{"\n"}
               {"  "}&#125;,{"\n"}
-              {"  "}coreStrengths: [ <span className="text-[#E07A5F]">'Detail-Oriented'</span>, <span className="text-[#E07A5F]">'User-centric Thinking'</span>, <span className="text-[#E07A5F]">'Responsive & Accessible Web Design',</span>, <span className="text-[#E07A5F]">'Adaptability'</span>, <span className="text-[#E07A5F]">'Problem-Solver'</span> ],{"\n"}
+              {"  "}coreStrengths: [ <span className="text-[#E07A5F]">'Detail-Oriented'</span>, <span className="text-[#E07A5F]">'User-centric Thinking'</span>, <span className="text-[#E07A5F]">'Responsive & Accessible Web Design'</span>, <span className="text-[#E07A5F]">'Adaptability'</span>, <span className="text-[#E07A5F]">'Problem-Solver'</span> ],{"\n"}
               &#125;;
             </code>
           </pre>
