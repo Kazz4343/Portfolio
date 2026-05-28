@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="flex justify-center lg:justify-start">
           <div className="w-85 bg-white rounded-lg p-4 flex flex-col gap-4 shadow-sm">
             <div className="grow flex justify-center mt-5">
-              <img alt="profile" src="/public/Profile.png" className="h-75 w-75 rounded-xl"/>
+              <img alt="profile" src="/Profile.png" className="h-75 w-75 rounded-xl"/>
             </div>
             <div className="flex flex-col gap-2 mt-2 mx-4 mb-2">
               <h2 className="grow text-xl font-semibold">Tech Stack</h2>

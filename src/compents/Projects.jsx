@@ -6,7 +6,7 @@ export default function Projects() {
       description:
         "A responsive full-stack social media clone featuring secure user authentication, real-time data streaming, and a sleek, modern interface.",
       tags: ["React", "Tailwind CSS", "Vercel", "Firebase"],
-      image: "/public/social.png",
+      image: "/social.png",
       liveLink: "https://socialmedia-clone-six.vercel.app/",
     },
     {
@@ -15,7 +15,7 @@ export default function Projects() {
       description:
         "The core objective is to showcase look, feel, and visual polish. SwiftCode is a high-fidelity, responsive frontend landing page built to demonstrate advanced UI/UX execution, modern layout design, and polished aesthetics. The primary goal of this project is to showcase frontend development skills.",
       tags: ["React", "Tailwind CSS", "Vercel"],
-      image: "./public/switfcode.png",
+      image: "/switfcode.png",
       liveLink: "https://swift-code-beta.vercel.app/",
     },
     {
@@ -24,7 +24,7 @@ export default function Projects() {
       description:
         "A responsive, client-side movie discovery web application built to practice modern frontend integration and dynamic data fetching. The application interfaces with a third-party film database API (such as TMDB) to allow users to search, browse, and explore trending movies or TV shows.",
       tags: ["React", "API fetching", "HTML", "CSS", "Vercel"],
-      image: "./public/movie.png",
+      image: "/movie.png",
       liveLink: "https://movie-web-practice.vercel.app/",
     },
     {
@@ -33,7 +33,7 @@ export default function Projects() {
       description:
         "A lightweight, responsive weather tracking application developed to practice fetching API integration and simple tailwindcss styling.",
       tags: ["React", "API fetching", "Tailwind CSS", "Vercel"],
-      image: "./public/weather.png",
+      image: "/weather.png",
       liveLink: "https://simple-weather-app-lake-seven.vercel.app/",
     },
   ];
