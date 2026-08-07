@@ -2,6 +2,15 @@ export default function Projects() {
   const projectInfo = [
     {
       id: 1,
+      title: "Vaulted",
+      description:
+        "A full-stack inventory management system equipped with secure user authentication and persistent database management.",
+      tags: ["Next.js", "Neon DB", "Neon Auth", "Tailwind CSS"],
+      image: "/vaulted.png",
+      liveLink: "https://vaulted-isov.vercel.app/",
+    },
+    {
+      id: 2,
       title: "Social Media Clone",
       description:
         "A responsive full-stack social media clone featuring secure user authentication, real-time data streaming, and a sleek, modern interface.",
@@ -10,7 +19,7 @@ export default function Projects() {
       liveLink: "https://socialmedia-clone-six.vercel.app/",
     },
     {
-      id: 2,
+      id: 3,
       title: "Swift Code",
       description:
         "The core objective is to showcase look, feel, and visual polish. SwiftCode is a high-fidelity, responsive frontend landing page built to demonstrate advanced UI/UX execution, modern layout design, and polished aesthetics. The primary goal of this project is to showcase frontend development skills.",
@@ -19,7 +28,7 @@ export default function Projects() {
       liveLink: "https://swift-code-beta.vercel.app/",
     },
     {
-      id: 3,
+      id: 4,
       title: "Movie Website",
       description:
         "A responsive, client-side movie discovery web application built to practice modern frontend integration and dynamic data fetching. The application interfaces with a third-party film database API (such as TMDB) to allow users to search, browse, and explore trending movies or TV shows.",
@@ -28,7 +37,7 @@ export default function Projects() {
       liveLink: "https://movie-web-practice.vercel.app/",
     },
     {
-      id: 4,
+      id: 5,
       title: "Weather Website",
       description:
         "A lightweight, responsive weather tracking application developed to practice fetching API integration and simple tailwindcss styling.",
@@ -73,7 +82,7 @@ export default function Projects() {
                 <h3 className="text-xl font-bold mb-2 group-hover:text-orange-400 transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed mb-4 flex-grow">
+                <p className="text-slate-400 text-sm leading-relaxed mb-4 grow">
                   {project.description}
                 </p>
 
